@@ -47,7 +47,7 @@
                       Vídeo</button>
                      <button type="button" onclick="exibirvideoaula('{{v.arquivo_codigo}}');" class="btn btn-sm btn-outline-secondary">Código</button>
                   </div>
-                  <small class="text-muted">{{v.fase}} | {{v.ano}} | {{v.nivel}}</small>
+                  <small class="text-muted">{{v.get_fase_display}} | {{v.get_ano_display}} | {{v.get_nivel_display}}</small>
                 </div>
               </div>
             </div>

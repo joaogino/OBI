@@ -14,7 +14,7 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body" data-bs-theme="dark">
+        <nav class="navbar navbar-expand-lg bg-dark border-body" data-bs-theme="dark">
           <div class="container-fluid">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -28,10 +28,7 @@
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="/admin">Admin</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="https://github.com/joaogino/OBI.git">Codigos git</a>
-                </li>
+                </li>                
               </ul>
             </div>
           </div>
@@ -44,10 +41,14 @@
     </main>    
     {% endblock %}
     
-  <footer class="text-muted">
-    <div class="container">
-      <h1>Agradeço minha prefeita PEDRINA por me acompanhar nesse TCC e Ari que colocou para janeiro para apresentar.</h1>
+  <footer class="text-light">
+    <div class="d-flex justify-content-center">
+        <small> 2023. Todos os direitos reservados</small>  
     </div>
+    <div class=" d-flex justify-content-center">
+      <a href="#" target="_blank"><img class="icon m-2" src="{%static 'img/youtube.png'%}"/></a>
+      <a href="#" target="_blank"><img class="icon m-2" src="{%static 'img/tiktok.png'%}"/></a>
+  </div>
   </footer>
   <script src="{% static 'js/jquery-3.3.1.slim.min.js' %}"></script>
   <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
