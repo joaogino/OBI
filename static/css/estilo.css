@@ -39,7 +39,8 @@ footer {
    align-self: center;
    flex-basis: 30%;
    flex-grow: 1;
-   min-width: 438px;
+   min-width: 424px;
+
 }
 
 
@@ -58,7 +59,7 @@ footer {
 }
 
 
-@media screen and (min-width: 280px) {
+@media screen and (max-width: 280px) {
    .album .card {
       min-width: 230px;
    }
