@@ -25,8 +25,8 @@ class Videoaula(models.Model):
     nivel = models.CharField(max_length=20, choices=Niveis.choices)
     fase = models.CharField(max_length=20, choices=Fases.choices)
     link_youtube = models.URLField()
-    arquivo_codigo = models.FileField(upload_to='arquivos_codigo/')
-    thumb = models.ImageField(upload_to='thumbs/')
+    arquivo_codigo = models.FileField(upload_to='arquivos_codigo/', null=True, blank=True)
+    thumb = models.ImageField(upload_to='thumbs/', null=True, blank=True)
 
     def __str__(self):
         return self.titulo
