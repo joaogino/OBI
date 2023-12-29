@@ -48,8 +48,11 @@
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
                     <button type="button" onclick="exibirvideoaula('{{v.link_youtube}}');" class="btn btn-sm btn-outline-secondary">
-                      Vídeo</button>
-                     <button type="button" onclick="exibirvideoaula('{{v.arquivo_codigo}}');" class="btn btn-sm btn-outline-secondary">Código</button>
+                      Vídeo
+                    </button>
+                    {%if v.arquivo_codigo %}
+                    <a href="/media/{{v.arquivo_codigo}}"  target="_blank" class="btn btn-sm btn-outline-secondary">Código</a>
+                    {%endif%}
                   </div>
                   <small class="text-muted">{{v.get_fase_display}} | {{v.get_ano_display}} | {{v.get_nivel_display}}</small>
                 </div>

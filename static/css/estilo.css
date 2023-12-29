@@ -27,3 +27,7 @@ nav.navbar.navbar-expand-lg.bg-dark {
 footer {
    opacity: 0.3;
 }
+
+.card {
+    min-width: 415px;
+}
